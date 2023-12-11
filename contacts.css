@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+.wrapper{ 
+    position: relative;
+}
+.contacts{ 
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    font-size: 20px;
+    line-height: normal;
+}
+.contacts-red{ 
+    color: red;
+    font-size: 24px ;
+}
+.contacts-email{ 
+    color: rgb(102, 102, 239);
+}
+.contacts-email:hover{
+    text-decoration: underline;
+} 
+.paragraph{
+    padding: 10px 0px 20px 50px;
+}
+.contacts-p{
+    padding: 20px 0px;
+}
+@media (max-width: 750px) {
+    .contacts {
+        left: 35%;
+        transform: translate(-25%, 10%);
+        font-size: 16px;
+    }
+}
+@media (max-width: 520px) {
+    .contacts {
+        transform: translate(-25%, 0%);
+    }
+}
+

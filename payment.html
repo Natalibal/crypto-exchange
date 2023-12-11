@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./payment.css">
+    <title data-lang="payment-title">Payment</title>
+</head>
+<body>
+    <div class="payment">
+        <div class="payment__body">
+            <div class="payment__order">
+                <div class="payment__order-title">
+                    <h3 data-lang="payment-titl">1.Payment</h3>
+                    <div class="payment__order-result">
+                        <p><span data-lang="payment-order">Order No.</span><span class="order" id="orderMain"></span></p>
+                    </div>
+                    <div class="payment__order-txt">
+                        <p data-lang="payment-text"> Make a payment with in 20 minutes. After that,return to <br> our website and click the I paid button to process <br> the request</p>
+                    </div>
+                    <div class="payment__order-item1">
+                        <h6 data-lang="payment-titl-1">Payment details</h6>
+                        <div class="payment__order-wallet">
+                            <div  class="walletImg" id="walletImg"></div>
+                            <div class="payment__order-wallet-txt">
+                                <p data-lang="payment-wallet">Wallet</p>
+                                <div class="payment__order-container">
+                                    <div class="payment__order-wallet-address" id="wallet"></div>
+                                    <div class="payment__order-wallet-icon">
+                                        <img src="./Icon/walletIcon.png" alt="" id='walledNumber'>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        </div>
+                    </div>
+                    <div class="payment__order-item2">
+                        <h6 data-lang="payment-titl-2">Check the address when copying!</h6>
+                        <p data-lang="payment-txt-2">Check the address when copying! To avoid the loss of your digital assets we earnestly ask you to check the first and last five <br>
+                        characters of the pasted wallet with the address from where copied it. Remember that only your alertness can help against frauds.</p>
+                    </div>
+                </div>
+                <div class="payment__order-item3">
+                    <div class="payment__order-data">
+                        <div class="payment__order-icon">
+                        </div>
+                        <div class="payment__order-currency" id="paymentWalletCurr">
+                        </div>
+                    </div>
+                    <div class="payment__order-btn">
+                        <button id="paidBtn" data-lang="payment-btn">I Paid</button>
+                    </div>
+                </div> 
+            </div>
+            <div class="payment__exchange">
+                <h3 data-lang="payment-data">Exchange data</h3>
+                <p><span data-lang="payment-order-2">Order No.</span> <span class="order" id="orderSecond"></span></p>
+                <div class="payment__exchange-item" id="exchange">
+            </div>
+                <div class="payment__exchange-request">
+                    <h3 data-lang="payment-titl-3">Request starges</h3>
+                    <div class="payment__exchange-request-1">
+                        <div class="payment__exchange-request-item">
+                            <img src="./Icon/purse.png" alt="" class="payment__exchange-request-img">
+                            <p class="payment__exchange-request-color" data-lang="payment-exchange-1">Making payment</p>
+                        </div>
+                    </div>
+                    <div class="payment__exchange-request-2">
+                        <div class="payment__exchange-request-item">
+                            <img src="./Icon/ibppl___копія__2_-removebg-preview.png" alt="" class="payment__exchange-request-img">
+                            <p data-lang="payment-exchange-2">Checking payment</p>
+                        </div>
+                    </div>
+                    <div class="payment__exchange-request-3">
+                        <div class="payment__exchange-request-item">
+                            <img src="./Icon/ibppl___копія__3_-removebg-preview.png" alt="" class="payment__exchange-request-img">
+                            <p data-lang="payment-exchange-3">Processing request</p>
+                        </div>
+                    </div>
+                    <div class="payment__exchange-request-4">
+                        <div class="payment__exchange-request-item">
+                            <img src="./Icon/ibppl-removebg-preview.png" alt="" class="payment__exchange-request-img">
+                            <p data-lang="payment-exchange-4">Final status</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+    <!--  MODAL  -->
+    <dialog data-modal class="modal--hide">
+        <p class='modal-title'>Copied to clipboard</p>
+        <p class='modal-text'></p>
+    </dialog>
+    <script src="./payment.js" type="module"></script>
+</body>
+</html>

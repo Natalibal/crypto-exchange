@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./verification.css">
+    <title data-lang="verification-title">Verification</title>
+</head>
+<body>
+    <div class="verification">
+        <div class="verification__body">
+            <div class="verification__order">
+                <div class="verification__order-title">
+                    <h3 data-lang="verification-titl">2. Payment verification</h3>
+                    <div class="verification__order-result">
+                        <p><span data-lang="verification-order">Order No.</span> <span class="order" id="orderMain"></span></p>
+                    </div>
+                    <div class="verification__order-txt">
+                        <p data-lang="verification-text"> We are currently checking the receipt of payment to our <br>
+                            account. After the payment is confirmed, the application <br>
+                            will be processed</p>
+                    </div>
+                    <div class="verification__order-item1">
+                        <h6 class="verification__order-ttl" data-lang="verification-titl-1">Payment details:</h6>
+                        <div class="verification__order-wallet" id="orderWallet"></div>
+                    </div>
+                    </div>
+                    </div>
+            <div class="verification__order-item2">
+                <h6 data-lang="verification-titl-2">
+                    We are checking the receipt of payment to our account
+                </h6>
+                <p><span  data-lang="verification-text-2">
+                    This may take 5 to 15 minutes. Thank you for your
+                        patience!</span></p>
+                <button id='verificationBtn' data-lang="verification-btn">Check transaction</button>
+            </div>
+        </div>
+            <div class="payment__exchange">
+                <h3 ><span data-lang="verification-data-1">Exchange data</span></h3>
+                <p><span data-lang="verification-order-2">Order No.</span> <span class="order" id="orderSecond"></span></p>
+                <div class="payment__exchange-item"  id="exchange">
+                  
+                </div>
+                <div class="payment__exchange-request">
+                    <h3 data-lang="verification-titl-3">Request starges</h3>
+                    <div class="payment__exchange-request-1">
+                        <div class="payment__exchange-request-item">
+                            <img src="./Icon/purse.png" alt="" class="payment__exchange-request-img">
+                            <p class="payment__exchange-request-color" data-lang="verification-exchange-1">Making payment</p>
+                        </div>
+                    </div>
+                    <div class="payment__exchange-request-2">
+                        <div class="payment__exchange-request-item">
+                            <img src="./Icon/ibp___копія__5_-removebg-preview.png" alt="" class="payment__exchange-request-img">
+                            <p class="payment__exchange-request-color" data-lang="verification-exchange-2">Checking payment</p>
+                        </div>
+                    </div>
+                    <div class="payment__exchange-request-3">
+                        <div class="payment__exchange-request-item">
+                            <img src="./Icon/ibppl___копія__3_-removebg-preview.png" alt="" class="payment__exchange-request-img">
+                            <p data-lang="verification-exchange-3">Processing request</p>
+                        </div>
+                    </div>
+                    <div class="payment__exchange-request-4">
+                        <div class="payment__exchange-request-item">
+                            <img src="./Icon/ibppl-removebg-preview.png" alt="" class="payment__exchange-request-img">
+                            <p data-lang="verification-exchange-4">Final status</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+    <script src="./verification.js" type="module"></script>
+    
+</body>
+</html>

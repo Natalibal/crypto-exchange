@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+ul, ol,li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+html, body {
+    background-color: black;
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.payment{ 
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.payment__order{ 
+   padding: 30px 80px 0px 40px;
+}
+.payment__order-title h3{
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgb(57, 55, 55);
+    border-radius: 10px;
+    display:inline-block;
+}
+.payment__order-result p{
+    padding: 10px;
+    margin: 20px 0px 10px;
+    font-size: 18px;
+    background-color: rgb(57, 55, 55);
+    border-radius: 10px;
+    display:inline-block;
+}
+.order{
+    color: rgb(249, 119, 72);
+    padding: 10px;
+}
+.payment__order-txt{ 
+    padding: 10px 0px;
+    margin: 20px 0px 20px;
+    font-size: 14px;
+    line-height: normal;
+    color: rgb(116, 113, 113);
+}
+.payment__order-item1{
+    padding: 10px 70px 0px 10px;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    display:inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px 15px 10px;
+}
+.payment__order-item1 h6{
+    font-size: 14px;
+    font-weight: bold;
+}
+.payment__order-wallet{
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.payment__order-wallet-txt{
+    margin-left: 10px;
+    }
+.payment__order-wallet-txt p{
+    font-size: 12px;
+    padding: 5px;
+    font-weight: bold;
+}
+.payment__order-wallet-address{
+    font-size: 12px;
+    padding: 5px;
+    color: rgb(116, 113, 113);
+}
+.payment__order-item2{   
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    display:inline-block;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.payment__order-item2 h6{
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: normal;
+    font-weight: bold;
+}
+.payment__order-item2 p{
+    font-size: 12px;
+    color: rgb(116, 113, 113);
+    line-height: normal;
+}
+.payment__order-item3{
+    margin: 15px 40px 0px;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px 70px 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.payment__order-icon img{
+    width: 25px;
+}
+.payment__order-data{
+    display: flex;
+}
+.payment__order-currency p{
+    padding: 0px 0px 10px 10px;
+    font-size: 12px;
+}
+.payment__order-currency div{
+    font-size: 12px;
+    color: rgb(116, 113, 113);
+}
+.payment__order-btn button{
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgb(249, 119, 72);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.payment__order-wallet-container{
+   display: flex;
+}
+.payment__exchange{
+    background-color:rgb(30, 30, 30);
+    border-radius: 10px;
+    width: 25%;
+    padding: 30px 0px 0px 20px;
+    margin: 30px 30px 90px 30px;
+}
+.payment__exchange-request-img{
+    width: 20px;
+}
+.payment__exchange h3{
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.payment__exchange p{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.payment__exchange-item{
+    background-color: rgb(50, 48, 48);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 20px 10px 0px;
+}
+.payment__exchange-item h6{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.payment__exchange-to,
+.payment__exchange-from{ 
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+.payment__exchange-icon{
+    width: 20px;
+}
+.payment__exchange-to p,
+.payment__exchange-from p{
+    font-size: 12px;
+    padding: 5px;
+}
+.payment__exchange-request{
+    padding: 40px 10px 30px;
+}
+.payment__exchange-request-item{
+    display: flex;
+    padding: 5px;
+}
+.payment__exchange-request-img{
+    width: 50px;
+}
+.payment__exchange-request-color{ 
+    color: rgb(249, 119, 72);
+}
+
+.payment__exchange-request-item p{
+    font-size: 14px;
+    padding: 10px;
+    margin-left: 5px;
+    line-height: normal;
+}
+
+.payment__order-currency{
+    display: flex;
+    align-items: center ;
+}
+.payment__order-container{
+    display: flex;
+}
+
+.payment__order-currencyIcon{
+    height: 30px;
+}
+.payment__order-currencyData{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.currencyImg{
+    padding-right: 10px;
+    height: 30px;
+}
+
+.payment__order-currencyData { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+.payment__order-currencyData > span{ 
+   font-weight: bold;
+   color: #fff;
+}
+.payment__order-currencyIcon{
+    padding-left: 15px;
+    height: 20px;
+    cursor: pointer;
+}
+.payment__order-wallet-icon{
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.payment__order-wallet-icon > img{ 
+    height: 20px;
+}
+
+@media (max-width: 1172px) {
+    .payment__exchange {
+        margin: 30px 30px 0px 0px;
+    }
+    .payment__exchange-request {
+        padding: 40px 0px 30px;
+    }
+    .payment__order {
+        padding: 30px 30px 0px 40px;
+    }
+    .payment{ 
+        overflow: hidden;
+    }
+}
+@media (max-width: 1090px) {
+    .payment__order {
+        padding: 30px 20px 0px 20px;
+    }
+    .payment {
+        justify-content: space-around;
+    }
+    .payment__exchange-request-item {
+        padding: 5px 0px;
+    }
+}
+@media (max-width: 1084px) {
+    .payment__order {
+        padding: 30px 0px 0px 0px;
+    }
+}
+@media (max-width: 1010px) {
+    .payment__order {
+        padding: 30px 0px 0px 0px;
+    }
+    .payment__order-item2 {
+        width: 452px;
+    }
+}
+    @media (max-width: 845px) {
+        .payment__order {
+            padding: 30px 0px 0px 0px;
+        }
+        .payment {
+            justify-content: space-evenly;
+        }
+    }
+       
+        @media (max-width: 823px) {
+            .payment {
+                flex-direction: column;
+            }
+            .payment__order {
+                padding: 30px 0px 0px 152px;
+            }
+            .payment__order-item3 {
+                margin: 15px 60px 40px 125px;
+                width: 500px;
+            }
+            .payment__exchange {
+                margin: 30px 90px 0px 170px;
+                width: 350px;
+            }
+        }
+        @media (max-width: 665px) {
+            .payment__order {
+                padding: 30px 0px 0px 30px;
+            }
+            .payment__order-item3 {
+                margin: 15px 60px 40px 30px;
+                width: 450px
+            }
+            .payment__exchange {
+                margin: 30px 90px 0px 30px;
+        
+           }
+        }
+        @media (max-width: 550px) {
+            .payment__order {
+                padding: 30px 0px 0px 10px;
+            }
+            .payment__order-item3 {
+                margin: 15px 60px 40px 10px;
+            }
+            .payment__exchange {
+                margin: 30px 90px 0px 10px;
+            }
+        }
+        @media (max-width: 510px) {
+            .payment__order {
+                padding: 30px 0px 0px 10px;
+            }
+            .payment__order-item1 {
+                width: 400px;
+            }
+            .payment__order-item2 {
+                width: 400px;
+            }
+            .payment__order-item3 {
+                width: 420px;
+            }
+        }
+        @media (max-width: 477px) {
+            .payment__order-item3 {
+                width: 390px;
+            }
+            .payment__order-item1 {
+                width: 385px;
+            }
+            .payment__order-item2 {
+                width: 385px;
+            }
+        }
+        @media (max-width: 398px) {
+           #walletImg{
+            padding-left: 15px;
+        }
+        .payment__order-wallet {
+            flex-direction: column;
+            align-items: start;
+        }
+        .payment__order-item3 {
+            width: 360px;
+        }
+        .payment__order-item1 {
+            width: 360px;
+        }
+        .payment__order-item2 {
+            width: 360px;
+        }
+        .payment__exchange-to, 
+        .payment__exchange-from {
+            gap: 20px;
+    }
+}
+    @media (max-width: 364px) {
+        #walletImg{
+         padding-left: 15px;
+     }
+     .payment__order {
+        padding: 30px 0px 0px 1px;
+    }
+    .payment__order-item3 {
+        margin: 15px 60px 40px 0px;
+    }
+    .payment__order-item3 {
+        width: 350px;
+    }
+    .payment__order-item1 {
+        width: 350px;
+    }
+    .payment__order-item2 {
+        width: 350px;
+    }
+}
+
+/* MODAL */
+dialog {
+    position: relative;
+    border-radius: 10px;
+    background: rgb(50, 48, 48);
+    color: #fff;
+    padding: 1rem;
+    min-width: 100px;
+    margin: 0 auto;
+    transition: all .3s ease-in-out;
+}
+dialog > p {
+    text-align: center;
+}
+dialog:focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+.modal-title {
+    padding-bottom: 6px;
+}
+.modal--active {
+    top: 1rem;
+}
+.modal--hide {
+    top: -200px;
+}

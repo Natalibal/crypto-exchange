@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+.wrapper{ 
+    position: relative;
+}
+.help{ 
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 20px;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+.contacts-email{ 
+    color: rgb(102, 102, 239);
+}
+.contacts-email:hover{
+    text-decoration: underline;
+} 
+.help-title{ 
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 0px;
+}

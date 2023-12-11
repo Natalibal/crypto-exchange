@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul >li{
+    list-style: none;
+    padding: 10px 30px ;
+}
+body{
+    background-color: black;
+}
+.wrapper{ 
+    position: relative;
+}
+.rules{ 
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 20px;
+    line-height: normal;
+}
+.rules-title{
+    padding: 20px 0px;
+}
+@media (max-width: 500px) {
+    ul >li{
+        padding: 10px 5px;
+    }
+}
+@media (max-width: 420px) {
+    ul >li{
+        padding: 5px 5px;
+    }
+}
