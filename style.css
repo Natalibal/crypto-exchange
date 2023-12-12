@@ -1356,9 +1356,6 @@ input[type="checkbox"] {
     .footer__container {
         gap: 15px;
     }
-    .footer__div{
-
-    }
 }
 @media (max-width: 835px) {
     .footer__container {
