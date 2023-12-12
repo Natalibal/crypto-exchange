@@ -1051,7 +1051,6 @@ input[type="checkbox"] {
    
 /* =============  coinvision  ============*/
 .coinvision{
-    /* background-color: #000000; */
     padding-bottom: 80px;
 }
 .coinvision__title h3{
@@ -1074,7 +1073,6 @@ input[type="checkbox"] {
     margin: 20px;
     background-color:rgb(57, 55, 55) ;
     border-radius: 10px;
-   
 }
 
 .coinvision__titl{
@@ -1098,10 +1096,9 @@ input[type="checkbox"] {
     width: 220px;
 }
 .coinvision__icon-4{
-        padding-left: 42px;
-        width: 215px;
-    }
-
+    padding-left: 42px;
+    width: 215px;
+}
 .coinvision__titl-1{
     padding-top: 15px;
 }
@@ -1112,7 +1109,7 @@ input[type="checkbox"] {
     padding-top: 15px;
 }
 
-@media (max-width: 1225px) {
+@media (max-width: 1235px) {
     .coinvision__container1, 
     .coinvision__container2, 
     .coinvision__container3, 
@@ -1121,41 +1118,57 @@ input[type="checkbox"] {
         margin: 15px;
     }
 }
-@media (max-width: 1060px) {
+@media (max-width: 1185px) {
     .coinvision__container1, 
     .coinvision__container2, 
     .coinvision__container3, 
     .coinvision__container4 {
         padding: 10px;
-        margin: 10px;
+        margin: 5px;
     }
 }
-@media (max-width: 990px) {
-    .coinvision__text {
-        font-size: 12px;
-    }
-
+@media (max-width: 1060px) {
     .coinvision__container1, 
     .coinvision__container2, 
     .coinvision__container3, 
     .coinvision__container4 {
-        padding: 8px;
-        margin: 5px;
+        padding: 5px;
+        margin: 2px;
     }
     .coinvision__titl{
         font-size: 18px;
     }
- }
-
- @media (max-width: 950px) {
+    .coinvision__text {
+        font-size: 12px;
+    }
+}
+ @media (max-width: 990px) {
     .coinvision__item{
         flex-direction: column;
         align-items: center;
     }
- 
+    .coinvision__text{
+        padding: 15px;
+        font-size: 14px;
+    }  
     .coinvision__title h3 {
         text-align: center;
- }
+    }
+    .coinvision__titl-1,
+    .coinvision__titl-2,
+    .coinvision__titl-3,
+    .coinvision__titl-4{
+        text-align: center;
+    }
+    .coinvision__container1, 
+    .coinvision__container2, 
+    .coinvision__container3, 
+    .coinvision__container4{
+        text-align: center;
+    }
+    .coinvision__icon-4{
+        padding-left: 0px;
+    }
 }
  @media (max-width: 500px) {
      .coinvision__container1{
