@@ -93,7 +93,6 @@ const orderWallet = document.getElementById('orderWallet');
             removeTimer()
             return
         }
-
        
         if(vereficationTime) {
             const baseMilisecondsLimit = 1000 * 60 * baseVaitMinutes
@@ -112,10 +111,12 @@ const orderWallet = document.getElementById('orderWallet');
     }
 
     const verificationBtn = document.getElementById('verificationBtn')
+
     function removeEventListener() {
         verificationBtn.removeEventListener('click', verificationBtnFoo);
         verificationBtn.textContent = 'Checking...'
     }
+
     function verificationBtnFoo() {
         exchangeData.vereficationTime = getParseDate()
         setCheckTimer = setInterval(timerIntervalAction, 1000)
@@ -126,6 +127,7 @@ const orderWallet = document.getElementById('orderWallet');
     function timerIntervalAction() {
         checkVerificationTimePassed(getParseDate(), exchangeData.vereficationTime)
     }
+
     function removeTimer() {
         clearInterval(setCheckTimer)
     }
@@ -133,7 +135,9 @@ const orderWallet = document.getElementById('orderWallet');
     if (exchangeData.vereficationTime > 0) {
         removeEventListener()
     }
+
     verificationBtn.addEventListener('click', verificationBtnFoo);
+
     langChangeMain();
 })
 

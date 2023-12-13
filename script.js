@@ -61,12 +61,11 @@ function clearExchangeCustomerWallet() {
     customerWallet.textContent = ''
 }
 
-//check LocalStorage and clear if data exist
-
-if (!checkLocalStorageItem(exchangeData)) {
-    // localStorage.removeItem('exchangeData');
-    // clearExchangeCustomerWallet()
-}
+// TODO: check LocalStorage and clear if data exist
+// if (!checkLocalStorageItem(exchangeData)) {
+//     localStorage.removeItem('exchangeData');
+//     clearExchangeCustomerWallet()
+// }
 
 // Create list based on DB object for All exchanges variants (DEFAULT)
 const sortedDataCrypto = filterExchangeTabs(sortedData, 'type', 'crypto')
@@ -299,7 +298,6 @@ const handleGiveInput = () => {
     })
 }
 handleGiveInput()
-//TODO:(e.preventDefault)
 // FORM Event Listener (get EMAIL and Wallet)
 const collectUserData = () => {
     const btn = document.getElementById('submitButton')

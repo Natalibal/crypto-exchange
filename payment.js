@@ -1,5 +1,6 @@
 
 import langChangeMain from './lang/langChangeMain.js';
+import { fetchTelegram, botpressFetsh } from './js/bot/bot.js';
 
 function myFunction(selector) {
     var copyText = document.getElementById(selector);
@@ -11,12 +12,9 @@ function myFunction(selector) {
     document.execCommand("copy");
 }
 
-const paidBtn = document.querySelector("#paidBtn") 
-paidBtn.addEventListener("click", payment) 
- 
-
-function payment() {
-    window.open('/verification.html', "_self");
+//TODO: Modify
+function redirectUrl(url) {
+    window.open(url, "_self");
 }
 
 function getObjectFromLocalStorage(key) {
@@ -43,11 +41,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     setData(exchangeData.exchangeNumber, "orderMain");
-
     setData(exchangeData.exchangeNumber, "orderSecond");
-
     setData(exchangeData.currExchangeGive.wallet, "wallet");
 
+    // TODO: Relocate and Modify
+    const paidBtn = document.querySelector("#paidBtn") 
+    paidBtn.addEventListener("click", () => handleBtn())
+
+    const handleBtn = () => {
+        botpressFetsh()
+        // fetchTelegram(exchangeData)
+        // redirectUrl('./verification.html')
+    }
 
     const walletImg = document.getElementById("walletImg");
     walletImg.innerHTML = `
