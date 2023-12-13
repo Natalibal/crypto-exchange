@@ -3,8 +3,6 @@
 const TELEGRAM_BOT_TOKEN = "6430685070:AAH_6l28rMGbrVTujz7Pzap1U10JUUZwhcE";
 const TELEGRAM_CHAT_ID = "-4035248833";
 
-const message = "TEST:%0A - Done"
-
 const createUrl = (obj) => {
     const data = {
         id: obj.exchangeNumber,
